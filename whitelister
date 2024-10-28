@@ -1,1 +1,1 @@
-print("access granted")
+game.Players.LocalPlayer:Kick("its over")
