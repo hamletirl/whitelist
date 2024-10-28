@@ -1,1 +1,1 @@
-return end
+game.Players.LocalPlayer:Kick("free test is over u bum")
