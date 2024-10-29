@@ -1,1 +1,20 @@
-return end
+
+local allowedUsernames = {"thestr0ngestthereis", "friendiysuperman"}
+
+
+local function isUsernameAllowed(username)
+	for _, allowedUsername in pairs(allowedUsernames) do
+		if username == allowedUsername then
+			return true
+		end
+	end
+	return false
+end
+
+
+local player = game.Players.LocalPlayer
+
+
+if not isUsernameAllowed(player.Name) then
+	return 
+end
