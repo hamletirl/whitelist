@@ -1,0 +1,19 @@
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId();
+local WhitelistedHWIDs = {"CAB27F9D-00A0-475D-948D-10961339B852", "99E0436F-40DC-47DC-B7F0-B200A231E171"}
+local qNVAKkuwxNpqruLjSRHg = false
+
+function CheckHWID(hwidval)
+	for _,whitelisted in pairs(WhitelistedHWIDs) do
+		if hwidval == whitelisted then
+			return true
+		elseif hwidval ~= whitelisted then
+			return false
+		end
+	end
+end
+
+qNVAKkuwxNpqruLjSRHg = CheckHWID(HWID)
+
+if qNVAKkuwxNpqruLjSRHg == false then
+	return
+end
