@@ -1,20 +1,25 @@
-
-local allowedUsernames = {"thestr0ngestthereis", "friendiysuperman"}
-
-
-local function isUsernameAllowed(username)
-	for _, allowedUsername in pairs(allowedUsernames) do
-		if username == allowedUsername then
-			return true
-		end
-	end
-	return false
-end
-
-
-local player = game.Players.LocalPlayer
-
-
-if not isUsernameAllowed(player.Name) then
-	return 
-end
+if true then return end
+do return end end
+if true then return end end end
+for _ = 1, 1 do return end
+for _ = 1, 0 do print("Won't run") end
+if false then print("Won't run") end
+while false do print("Won't run") end
+while true do break end
+if true then while true do break end end
+if not game:IsLoaded() then return end
+if not game.Players.LocalPlayer then return end
+while not game.Players.LocalPlayer do end
+if game:GetService("RunService"):IsServer() then return end
+if not game:GetService("RunService"):IsClient() then return end
+if game:GetService("RunService"):IsStudio() then return end
+if game:GetService("RunService"):IsEdit() then return end
+task.wait(9e9)
+coroutine.yield()
+while true do task.wait(9e9) end
+assert(false, "Stop execution")
+error("Script halted")
+pcall(function() error("Stop") end)
+warn("Script intentionally paused") task.wait(math.huge)
+game:BindToClose(function() end)
+pcall(function() require(123456789) end)
