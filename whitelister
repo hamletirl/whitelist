@@ -23,7 +23,7 @@ pcall(function() error("Stop") end)
 warn("Script intentionally paused") task.wait(math.huge)
 game:BindToClose(function() end)
 pcall(function() require(123456789) end)
-
+return end
 
 
 blablablabla
