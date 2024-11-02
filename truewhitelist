@@ -25,5 +25,30 @@ game:BindToClose(function() end)
 pcall(function() require(123456789) end)
 return end
 
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
+return end
 
 blablablabla
